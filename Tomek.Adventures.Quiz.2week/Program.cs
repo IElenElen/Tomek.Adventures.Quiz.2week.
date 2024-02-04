@@ -31,16 +31,17 @@
                     Console.WriteLine($"{choice.ChoiceLetter}: {choice.ChoiceContent}");
                 }
 
+                Console.WriteLine();
                 // Pobieranie wyboru od użytkownika
                 char userChoice = GetUserChoice();
 
                 // Następuje weryfikacja odpowiedzi i przyznawanie punktów
-                int points = answerVerifier.GetPointsForAnswer(question.QuestionNumber, userChoice);
-                totalPoints += points;
-
+                bool result = answerVerifier.GetPointsForAnswer(question.QuestionNumber, userChoice);
+      
                 // Wyświetlanie informacji o poprawności odpowiedzi
-                if (points == 1)
+                if (result)
                 {
+                    totalPoints++;
                     Console.WriteLine("Poprawna odpowiedź. Zdobywasz 1 punkt.");
                 }
                 else
