@@ -4,6 +4,8 @@
     {
         static void Main(string[] args)
         {
+            //Ta wersja była wstępna, z dodaniem Set i Handling, końcówka stycznia lub luty 2024
+
             Console.WriteLine("Cześć. Fascynują Cię przygody Tomka z cyklu powieści autorstwa A. Szklarskiego? Jeśli tak :-), zapraszam do zabawy.");
             Console.WriteLine("Oto quiz. Tylko jedna odpowiedź jest poprawna: a, b lub c, nagrodzona 1 punktem.");
             //Console.WriteLine("Zapoznaj się z treścią kolejnych pytań i nie zwlekaj z odpowiedzią. Masz pół minuty, by wybrać poprawną odpowiedź.");
